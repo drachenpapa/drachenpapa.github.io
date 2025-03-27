@@ -1,1 +1,188 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Drachenpapa</title>
+
+        <meta name="description" content="Portfolio von Drachenpapa – Tech, Drachen und mehr. Kreative Projekte und Lösungen.">
+        <meta name="keywords" content="Portfolio, Drachenpapa, Entwickler, Technologie, Webentwicklung, Kreativität">
+        <meta name="author" content="Henning Steinberg (Drachenpapa)">
+
+        <meta property="og:title" content="Drachenpapa – Portfolio">
+        <meta property="og:description" content="Portfolio von Drachenpapa – Tech, Drachen und kreative Projekte.">
+        <meta property="og:image" content="https://example.com/preview.jpg">
+        <meta property="og:url" content="https://drachenpapa.github.io">
+
+        <meta name="theme-color" content="#ff6b00">
+        <link rel="icon" href="assets/favicon.ico" sizes="32x32">
+        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+        <link rel="manifest" href="assets/site.webmanifest">
+        <link rel="canonical" href="https://drachenpapa.github.io/">
+        <link rel="stylesheet" href="assets/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="assets/script.js" defer></script>
+    </head>
+
+    <body>
+        <header class="flex justify-between items-center px-8">
+            <h1 class="text-5xl font-bold">Drachenpapa</h1>
+            <nav class="flex items-center gap-8">
+                <a href="#home" class="icon-link" onclick="scrollToSection('home')" aria-label="Home">
+                    <i data-lucide="home"></i>
+                </a>
+                <a href="#projects" class="icon-link" onclick="scrollToSection('projects')" aria-label="Projects">
+                    <i data-lucide="folder"></i>
+                </a>
+                <a href="#resume" class="icon-link" onclick="scrollToSection('resume')" aria-label="Resume">
+                    <i data-lucide="file-text"></i>
+                </a>
+                <a href="https://github.com/drachenpapa" class="icon-link" target="_blank" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com/in/henning-steinberg/" class="icon-link" target="_blank" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="mailto:drachenpapa.dev@gmail.com" class="icon-link" aria-label="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+
+                <label class="relative inline-flex items-center cursor-pointer" for="toggle" aria-label="Toggle Dark Mode">
+                    <input type="checkbox" id="toggle" class="sr-only" onchange="toggleTheme()">
+                    <div class="w-14 h-8 bg-gray-300 dark:bg-gray-700 rounded-full peer-checked:bg-orange-500 relative transition-colors">
+                        <div class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full peer-checked:translate-x-6 transition-transform"></div>
+                    </div>
+                </label>
+            </nav>
+        </header>
+
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center">
+            <h2 class="text-5xl font-extrabold mb-6">👋 Hi, I’m Henning</h2>
+            <p class="text-xl">I'm a passionate Software Engineer working at @hmmh AG, where I specialize in Java development. My team at INDI is driven by a shared passion for agile development and creating custom software solutions tailored to our clients' needs. I thrive on tackling complex development challenges, with a particular focus on building scalable, high-performance systems and ensuring robust security measures through rigorous testing practices. I'm also a certified ISTQB Foundation Level Tester with the Agile Tester Extension, committed to delivering secure and high-quality code, especially in agile environments.
+
+                In my spare time, I love spending time with my family, staying active through jogging and exploring new areas in Pokémon Go?.</p>
+        </section>
+
+        <section id="projects" class="min-h-screen flex flex-col justify-center items-center text-center">
+            <h2 class="text-4xl font-bold mb-8">Projects</h2>
+            <p class="mb-12">Explore my latest work and experiments in technology and creativity.</p>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="project-content">
+                            <img src="assets/images/genderify.png" alt="Genderify Logo" class="project-logo">
+                            <div class="content">
+                                <div class="title">
+                                    Genderify
+                                    <div class="project-links">
+                                        <a href="https://github.com/drachenpapa/genderify" target="_blank" aria-label="Genderify's GitHub Repository">
+                                            <i data-lucide="github"></i>
+                                        </a>
+                                        <a href="https://genderify.vercel.app/" target="_blank" aria-label="Genderify Website">
+                                            <i data-lucide="globe"></i>
+                                        </a>
+    <!--                                        <a href="https://store.example.com/genderify" target="_blank" aria-label="Store">-->
+    <!--                                            <i data-lucide="shopping-cart"></i>-->
+    <!--                                        </a>-->
+                                    </div>
+                                </div>
+                                <div class="tech-stack">Technologies: Office Add-In, TypeScript, HTML, CSS, JS</div>
+                                <div class="description">Genderify is an Office Add-In that suggests gender-neutral alternatives or gendered terms by adding customizable gender markers (e.g. *, :). Enhance your communication with inclusive language effortlessly.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="project-content">
+                            <img src="assets/images/pexi.png" alt="PEXI Logo" class="project-logo">
+                            <div class="content">
+                                <div class="title">
+                                    PEXI
+                                    <div class="project-links">
+                                        <a href="https://github.com/drachenpapa/pexi" target="_blank" aria-label="PEXI's GitHub Repository">
+                                            <i data-lucide="github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tech-stack">Technologies: Java, Swing</div>
+                                <div class="description">PEXI – Your smart partner for financial growth. Effortlessly manage your finances, analyze expenses, and plan with clear insights for a secure, growth-oriented future.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dots"></div>
+            </div>
+        </section>
+
+        <section id="resume" class="min-h-screen flex flex-col justify-center items-center text-center">
+            <h2 class="text-4xl font-bold mb-8">Resume</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - Present</div>
+                    <div class="timeline-content flex items-center gap-4">
+                        <i data-lucide="laptop" class="text-3xl"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">Senior Software Engineer at hmmh AG</h4>
+                            <p>tbd.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content flex items-center gap-4">
+                        <i data-lucide="scroll" class="text-3xl"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">ISTQB CTFL-AT Agile Tester Extension</h4>
+                            <p>tbd.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016 - 2019</div>
+                    <div class="timeline-content flex items-center gap-4">
+                        <i data-lucide="laptop" class="text-3xl"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">Software Engineer at hmmh AG</h4>
+                            <p>tbd.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2013 - 2016</div>
+                    <div class="timeline-content flex items-center gap-4">
+                        <i data-lucide="graduation-cap" class="text-3xl"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">Master of Science (MS) in Computer Science</h4>
+                            <p>Universität Bremen - tbd.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2013</div>
+                    <div class="timeline-content flex items-center gap-4">
+                        <i data-lucide="scroll" class="text-3xl"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">ISTQB CTFL - Certified Tester Foundation Level</h4>
+                            <p>tbd.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2009 - 2013</div>
+                    <div class="timeline-content flex items-center gap-4">
+                        <i data-lucide="graduation-cap" class="text-3xl"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">Bachelor of Science (BS) in Computer Science</h4>
+                            <p>Hochschule Bremen - tbd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
