@@ -1,0 +1,18 @@
+# IntelliJ IDEA
+.idea/
+
+# Temporary and log files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db

@@ -24,7 +24,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://unpkg.com/lucide@latest"></script>
-        <script src="assets/script.js" defer></script>
+        <script src="assets/script.js"></script>
     </head>
 
     <body>
@@ -40,6 +40,9 @@
                 <a href="#resume" class="icon-link" onclick="scrollToSection('resume')" aria-label="Resume">
                     <i data-lucide="file-text"></i>
                 </a>
+
+                <span class="separator"></span>
+
                 <a href="https://github.com/drachenpapa" class="icon-link" target="_blank" aria-label="GitHub">
                     <i data-lucide="github"></i>
                 </a>
@@ -50,20 +53,25 @@
                     <i data-lucide="mail"></i>
                 </a>
 
+                <span class="separator"></span>
+
                 <label class="relative inline-flex items-center cursor-pointer" for="toggle" aria-label="Toggle Dark Mode">
-                    <input type="checkbox" id="toggle" class="sr-only" onchange="toggleTheme()">
-                    <div class="w-14 h-8 bg-gray-300 dark:bg-gray-700 rounded-full peer-checked:bg-orange-500 relative transition-colors">
-                        <div class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full peer-checked:translate-x-6 transition-transform"></div>
+                    <input type="checkbox" id="toggle" class="sr-only" onchange="toggleTheme()" aria-checked="false">
+                    <div class="toggle-container">
+                        <div class="toggle-button"></div>
                     </div>
+                    <span id="dark-mode-text" class="ml-3 text-sm">Dark Mode</span>
                 </label>
             </nav>
         </header>
 
         <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center">
-            <h2 class="text-5xl font-extrabold mb-6">👋 Hi, I’m Henning</h2>
-            <p class="text-xl">I'm a passionate Software Engineer working at @hmmh AG, where I specialize in Java development. My team at INDI is driven by a shared passion for agile development and creating custom software solutions tailored to our clients' needs. I thrive on tackling complex development challenges, with a particular focus on building scalable, high-performance systems and ensuring robust security measures through rigorous testing practices. I'm also a certified ISTQB Foundation Level Tester with the Agile Tester Extension, committed to delivering secure and high-quality code, especially in agile environments.
+            <div class="container mx-auto px-8">
+                <h2 class="text-5xl font-extrabold mb-6">👋 Hi, I’m Henning</h2>
+                <p class="text-xl">I'm a passionate Software Engineer working at <a href="https://hmmh.de">hmmh AG</a>, where I specialize in Java development. My team at INDI is driven by a shared passion for agile development and creating custom software solutions tailored to our clients' needs. I thrive on tackling complex development challenges, with a particular focus on building scalable, high-performance systems and ensuring robust security measures through rigorous testing practices. I'm also a certified ISTQB Foundation Level Tester with the Agile Tester Extension, committed to delivering secure and high-quality code, especially in agile environments.
 
-                In my spare time, I love spending time with my family, staying active through jogging and exploring new areas in Pokémon Go?.</p>
+                    In my spare time, I love spending time with my family, staying active through jogging and exploring new areas in Pokémon Go.</p>
+            </div>
         </section>
 
         <section id="projects" class="min-h-screen flex flex-col justify-center items-center text-center">
