@@ -30,8 +30,12 @@
     <body>
         <header class="flex justify-between items-center px-8">
             <h1 class="text-5xl font-bold">Drachenpapa</h1>
-            <nav class="flex items-center gap-8">
-                <a href="#home" class="icon-link" onclick="scrollToSection('home')" aria-label="Home">
+            <button id="menu-toggle" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row items-center gap-4">
+            <a href="#home" class="icon-link" onclick="scrollToSection('home')" aria-label="Home">
                     <i data-lucide="home"></i>
                 </a>
                 <a href="#projects" class="icon-link" onclick="scrollToSection('projects')" aria-label="Projects">
@@ -40,9 +44,7 @@
                 <a href="#resume" class="icon-link" onclick="scrollToSection('resume')" aria-label="Resume">
                     <i data-lucide="file-text"></i>
                 </a>
-
                 <span class="separator"></span>
-
                 <a href="https://github.com/drachenpapa" class="icon-link" target="_blank" aria-label="GitHub">
                     <i data-lucide="github"></i>
                 </a>
@@ -52,9 +54,7 @@
                 <a href="mailto:drachenpapa.dev@gmail.com" class="icon-link" aria-label="Email">
                     <i data-lucide="mail"></i>
                 </a>
-
                 <span class="separator"></span>
-
                 <label class="relative inline-flex items-center cursor-pointer" for="toggle" aria-label="Toggle Dark Mode">
                     <input type="checkbox" id="toggle" class="sr-only" onchange="toggleTheme()" aria-checked="false">
                     <div class="toggle-container">
