@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Drachenpapa</title>
+        <title>Henning Steinberg</title>
 
         <meta name="description" content="Portfolio von Drachenpapa – Tech, Drachen und mehr. Kreative Projekte und Lösungen.">
         <meta name="keywords" content="Portfolio, Drachenpapa, Entwickler, Technologie, Webentwicklung, Kreativität">
@@ -29,30 +29,39 @@
 
     <body>
         <header class="flex justify-between items-center px-8">
-            <h1 class="text-5xl font-bold">Drachenpapa</h1>
+            <div class="flex items-center gap-4">
+                <img src="assets/images/profile.jpg" alt="Profilbild von Henning Steinberg" class="w-16 h-16 rounded-full border-4" id="profile-image">
+                <h1 class="text-5xl font-bold">Henning Steinberg</h1>
+            </div>
             <button id="menu-toggle" class="md:hidden">
                 <i data-lucide="menu"></i>
             </button>
 
             <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row items-center gap-4">
-            <a href="#home" class="icon-link" onclick="scrollToSection('home')" aria-label="Home">
+                <a href="#home" class="icon-link flex items-center gap-2" onclick="scrollToSection('home')" aria-label="Home">
                     <i data-lucide="home"></i>
+                    <span class="md:hidden">Home</span>
                 </a>
-                <a href="#projects" class="icon-link" onclick="scrollToSection('projects')" aria-label="Projects">
+                <a href="#projects" class="icon-link flex items-center gap-2" onclick="scrollToSection('projects')" aria-label="Projects">
                     <i data-lucide="folder"></i>
+                    <span class="md:hidden">Projekte</span>
                 </a>
-                <a href="#resume" class="icon-link" onclick="scrollToSection('resume')" aria-label="Resume">
+                <a href="#resume" class="icon-link flex items-center gap-2" onclick="scrollToSection('resume')" aria-label="Resume">
                     <i data-lucide="file-text"></i>
+                    <span class="md:hidden">Lebenslauf</span>
                 </a>
                 <span class="separator"></span>
-                <a href="https://github.com/drachenpapa" class="icon-link" target="_blank" aria-label="GitHub">
+                <a href="https://github.com/drachenpapa" class="icon-link flex items-center gap-2" target="_blank" aria-label="GitHub">
                     <i data-lucide="github"></i>
+                    <span class="md:hidden">GitHub</span>
                 </a>
-                <a href="https://linkedin.com/in/henning-steinberg/" class="icon-link" target="_blank" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/henning-steinberg/" class="icon-link flex items-center gap-2" target="_blank" aria-label="LinkedIn">
                     <i data-lucide="linkedin"></i>
+                    <span class="md:hidden">LinkedIn</span>
                 </a>
-                <a href="mailto:drachenpapa.dev@gmail.com" class="icon-link" aria-label="Email">
+                <a href="mailto:drachenpapa.dev@gmail.com" class="icon-link flex items-center gap-2" aria-label="Email">
                     <i data-lucide="mail"></i>
+                    <span class="md:hidden">Mail</span>
                 </a>
                 <span class="separator"></span>
                 <label class="relative inline-flex items-center cursor-pointer" for="toggle" aria-label="Toggle Dark Mode">
@@ -63,6 +72,7 @@
                     <span id="dark-mode-text" class="ml-3 text-sm">Dark Mode</span>
                 </label>
             </nav>
+
         </header>
 
         <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center">
@@ -123,6 +133,13 @@
                     </div>
                 </div>
 
+                <button class="slider-button left" aria-label="Previous project" id="prev-slide">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+
+                <button class="slider-button right" aria-label="Next project" id="next-slide">
+                    <i data-lucide="chevron-right"></i>
+                </button>
                 <div class="dots"></div>
             </div>
         </section>

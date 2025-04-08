@@ -31,6 +31,10 @@ header {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
+#profile-image {
+    border-color: var(--dragon-orange);
+}
+
 #menu-toggle {
     background: none;
     border: none;
@@ -112,10 +116,12 @@ input:checked + .toggle-container .toggle-button {
 }
 
 .slide {
+    align-items: center;
+    justify-content: center;
     min-width: 100%;
     box-sizing: border-box;
     display: flex;
-    padding: 20px;
+    padding: 0 80px;
     background: var(--background-light);
 }
 
@@ -123,6 +129,37 @@ input:checked + .toggle-container .toggle-button {
     width: 150px;
     height: 150px;
     object-fit: cover;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: var(--dragon-orange);
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.slider-button.left {
+    left: 1rem;
+}
+
+.slider-button.right {
+    right: 1rem;
+}
+
+.slider-button:hover {
+    background-color: var(--dragon-orange);
+    color: var(--text-dark);
+}
+
+.slider-container {
+    position: relative;
 }
 
 .project-content {
@@ -288,6 +325,11 @@ input:checked + .toggle-container .toggle-button {
 
 .dark .slide {
     background: var(--background-dark);
+}
+
+.dark .slider-button:hover {
+    background-color: var(--dragon-orange);
+    color: var(--text-light);
 }
 
 .dark .dot {
