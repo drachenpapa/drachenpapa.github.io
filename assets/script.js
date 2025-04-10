@@ -26,8 +26,20 @@ function initNavMenu() {
 }
 
 function initializeTheme() {
-    document.documentElement.classList.toggle("dark", document.getElementById("toggle").checked);
-    document.getElementById("toggle").checked = document.documentElement.classList.contains("dark");
+    const toggle = document.getElementById("toggle");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (prefersDark) {
+        document.documentElement.classList.add("dark");
+        toggle.checked = true;
+    } else {
+        document.documentElement.classList.remove("dark");
+        toggle.checked = false;
+    }
+
+    toggle.addEventListener("change", () => {
+        document.documentElement.classList.toggle("dark", toggle.checked);
+    });
 }
 
 function initSlider() {
@@ -89,8 +101,4 @@ function initSlider() {
 
 function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-}
-
-function toggleTheme() {
-    document.documentElement.classList.toggle("dark");
 }

@@ -6,12 +6,12 @@
 
         <title>Henning Steinberg</title>
 
-        <meta name="description" content="Portfolio von Drachenpapa – Tech, Drachen und mehr. Kreative Projekte und Lösungen.">
-        <meta name="keywords" content="Portfolio, Drachenpapa, Entwickler, Technologie, Webentwicklung, Kreativität">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="Portfolio, Drachenpapa">
         <meta name="author" content="Henning Steinberg (Drachenpapa)">
 
         <meta property="og:title" content="Drachenpapa – Portfolio">
-        <meta property="og:description" content="Portfolio von Drachenpapa – Tech, Drachen und kreative Projekte.">
+        <meta property="og:description" content="Portfolio von Drachenpapa">
         <meta property="og:image" content="https://example.com/preview.jpg">
         <meta property="og:url" content="https://drachenpapa.github.io">
 
@@ -30,7 +30,7 @@
     <body>
         <header class="flex justify-between items-center px-8">
             <div class="flex items-center gap-4">
-                <img src="assets/images/profile.jpg" alt="Profilbild von Henning Steinberg" class="w-16 h-16 rounded-full border-4" id="profile-image">
+                <img src="assets/images/profile.png" alt="Profilbild von Henning Steinberg" class="w-20 h-20 rounded-full border-2" id="profile-image">
                 <h1 class="text-5xl font-bold">Henning Steinberg</h1>
             </div>
             <button id="menu-toggle" class="md:hidden">
@@ -50,7 +50,9 @@
                     <i data-lucide="file-text"></i>
                     <span class="md:hidden">Lebenslauf</span>
                 </a>
+
                 <span class="separator"></span>
+
                 <a href="https://github.com/drachenpapa" class="icon-link flex items-center gap-2" target="_blank" aria-label="GitHub">
                     <i data-lucide="github"></i>
                     <span class="md:hidden">GitHub</span>
@@ -63,16 +65,17 @@
                     <i data-lucide="mail"></i>
                     <span class="md:hidden">Mail</span>
                 </a>
+
                 <span class="separator"></span>
+
                 <label class="relative inline-flex items-center cursor-pointer" for="toggle" aria-label="Toggle Dark Mode">
-                    <input type="checkbox" id="toggle" class="sr-only" onchange="toggleTheme()" aria-checked="false">
+                    <input type="checkbox" id="toggle" class="sr-only">
                     <div class="toggle-container">
                         <div class="toggle-button"></div>
                     </div>
                     <span id="dark-mode-text" class="ml-3 text-sm">Dark Mode</span>
                 </label>
             </nav>
-
         </header>
 
         <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center">
@@ -87,7 +90,6 @@
         <section id="projects" class="min-h-screen flex flex-col justify-center items-center text-center">
             <h2 class="text-4xl font-bold mb-8">Projects</h2>
             <p class="mb-12">Explore my latest work and experiments in technology and creativity.</p>
-
             <div class="slider-container">
                 <div class="slider">
                     <div class="slide">
@@ -136,7 +138,6 @@
                 <button class="slider-button left" aria-label="Previous project" id="prev-slide">
                     <i data-lucide="chevron-left"></i>
                 </button>
-
                 <button class="slider-button right" aria-label="Next project" id="next-slide">
                     <i data-lucide="chevron-right"></i>
                 </button>
