@@ -229,6 +229,7 @@ header {
 
 .view-more-link {
     display: inline-flex;
+    align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
     background: transparent;
@@ -452,7 +453,6 @@ header {
 .resume-title {
     margin-bottom: 2rem;
 }
-
 
 .dark,
 .dark body,
