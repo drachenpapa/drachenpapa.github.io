@@ -20,8 +20,8 @@ In my free time, I enjoy family life, jogging, and hunting Pokémon. 🏃‍♂�
   **Tech:** Java, Swing
 - **Wyrmhort [:octocat:](https://github.com/drachenpapa/wyrmhort) [:globe_with_meridians:](https://wyrmhort.web.app)**  
   _Wyrmhort is a personal hobby expense tracker designed to help me manage and monitor my spending across various hobbies._  
-  **Tech:** **Python** (FastAPI, Uvicorn), **TypeScript** (React, Vite), **Google Cloud** (Cloud Run, Firebase Authentication, Firebase Hosting, Firestore)
-- **Zatacka [:octocat:](https://github.com/drachenpapa/zatacka)**  
+  **Tech:** **Python** (PyProject, FastAPI, Uvicorn, Pydantic), **TypeScript** (React, Vite), **Google Cloud** (Cloud Run, Firebase Authentication, Firebase Hosting, Firestore)
+- **Drak [:octocat:](https://github.com/drachenpapa/drak)**  
   _A remake of the classic multiplayer snake game **Zatacka**, also known as "Achtung, die Kurve!" or "Curve fever". Players control curves, aiming to outlast opponents without crashing._  
   **Tech:** Java, Swing
 
