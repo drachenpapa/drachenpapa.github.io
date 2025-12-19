@@ -406,7 +406,8 @@ header {
     color: var(--text-dark);
 }
 
-.dark .nav-link {
+.dark .nav-link,
+.dark .mobile-menu-toggle {
     color: var(--text-dark);
 }
 
