@@ -60,7 +60,6 @@ header {
 }
 
 .nav-menu {
-    display: none;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -435,6 +434,25 @@ header {
 }
 
 @media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--background-light);
+        padding: 1rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .nav-menu:not(.hidden) {
+        display: flex;
+    }
+
+    .dark .nav-menu {
+        background: var(--background-dark);
+    }
+
     .nav-link-text {
         display: inline;
     }
@@ -462,20 +480,6 @@ header {
     .resume-categories {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background: var(--background-light);
-        padding: 1rem;
-        box-shadow: var(--box-shadow);
-    }
-
-    .dark .nav-menu {
-        background: var(--background-dark);
     }
 
     .separator {
