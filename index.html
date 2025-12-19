@@ -29,31 +29,30 @@
     <body>
         <header class="header-layout">
             <div class="header-profile">
-                <img src="assets/images/profile.png" alt="Profilbild von Henning Steinberg" class="w-20 h-20 rounded-full border-2" id="profile-image">
+                <img src="assets/images/profile.png" alt="Profile picture of Henning Steinberg" class="profile-image" id="profile-image">
                 <h1 class="profile-title">Henning Steinberg</h1>
             </div>
-            <button id="menu-toggle" class="md:hidden">
+            <button id="menu-toggle" class="mobile-menu-toggle">
                 <i data-lucide="menu"></i>
             </button>
 
             <nav id="nav-menu" class="nav-menu">
-
-                <a href="https://github.com/drachenpapa" class="icon-link nav-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/drachenpapa" class="nav-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i data-lucide="github"></i>
-                    <span class="md:hidden">GitHub</span>
+                    <span class="nav-link-text">GitHub</span>
                 </a>
-                <a href="https://linkedin.com/in/henning-steinberg/" class="icon-link nav-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/henning-steinberg/" class="nav-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i data-lucide="linkedin"></i>
-                    <span class="md:hidden">LinkedIn</span>
+                    <span class="nav-link-text">LinkedIn</span>
                 </a>
-                <a href="mailto:drachenpapa.dev@gmail.com" class="icon-link nav-link" aria-label="Email">
+                <a href="mailto:drachenpapa.dev@gmail.com" class="nav-link" aria-label="Email">
                     <i data-lucide="mail"></i>
-                    <span class="md:hidden">Mail</span>
+                    <span class="nav-link-text">Mail</span>
                 </a>
 
                 <span class="separator"></span>
 
-                <button id="theme-toggle" class="icon-link nav-link cursor-pointer" aria-label="Toggle Dark Mode">
+                <button id="theme-toggle" class="nav-link" aria-label="Toggle Dark Mode">
                     <span id="icon-sun" class="hidden"><i data-lucide="sun"></i></span>
                     <span id="icon-moon"><i data-lucide="moon"></i></span>
                 </button>
@@ -69,16 +68,16 @@
                         <p class="hero-subtitle">Senior Software Engineer at <a href="https://hmmh.de" target="_blank" rel="noopener noreferrer" class="highlight-link">hmmh AG</a>, specializing in Java development and agile methodologies.</p>
                         <p class="hero-text-large">I build scalable, high-performance systems with a focus on code quality, security, and testing. Certified ISTQB Foundation Level Tester with Agile Extension.</p>
                         <p class="hero-text-final">In my free time: family, jogging, and exploring new areas in Pokémon Go.</p>
-                        <div class="cta-buttons">
-                            <a href="https://github.com/drachenpapa" class="cta-button" target="_blank" rel="noopener noreferrer">
+                        <div class="social-container">
+                            <a href="https://github.com/drachenpapa" class="social-link" target="_blank" rel="noopener noreferrer">
                                 <i data-lucide="github"></i>
                                 <span>GitHub</span>
                             </a>
-                            <a href="https://linkedin.com/in/henning-steinberg/" class="cta-button" target="_blank" rel="noopener noreferrer">
+                            <a href="https://linkedin.com/in/henning-steinberg/" class="social-link" target="_blank" rel="noopener noreferrer">
                                 <i data-lucide="linkedin"></i>
                                 <span>LinkedIn</span>
                             </a>
-                            <a href="mailto:drachenpapa.dev@gmail.com" class="cta-button">
+                            <a href="mailto:drachenpapa.dev@gmail.com" class="social-link">
                                 <i data-lucide="mail"></i>
                                 <span>Email</span>
                             </a>
@@ -95,9 +94,9 @@
 
                 <div class="projects-grid">
                     <div class="project-card">
-                        <img src="assets/images/genderify.png" alt="Genderify Logo" class="project-card-logo">
-                        <h3 class="project-card-title">Genderify</h3>
-                        <div class="project-card-links">
+                        <img src="assets/images/genderify.png" alt="Genderify Logo" class="pc-logo">
+                        <h3 class="pc-title">Genderify</h3>
+                        <div class="pc-links">
                             <a href="https://github.com/drachenpapa/genderify" target="_blank" rel="noopener noreferrer" aria-label="Genderify's GitHub Repository">
                                 <i data-lucide="github"></i>
                             </a>
@@ -108,14 +107,14 @@
                                 <i data-lucide="book"></i>
                             </a>
                         </div>
-                        <p class="project-card-tech">Office Add-In • TypeScript • HTML/CSS</p>
-                        <p class="project-card-description">Gender-inclusive language suggestions with customizable markers. Available as Office Add-In and web tool.</p>
+                        <p class="pc-tech">Office Add-In • TypeScript • HTML/CSS</p>
+                        <p class="pc-description">Gender-inclusive language suggestions with customizable markers. Available as Office Add-In and web tool.</p>
                     </div>
 
                     <div class="project-card">
-                        <img src="assets/images/wyrmhort.png" alt="Wyrmhort Logo" class="project-card-logo">
-                        <h3 class="project-card-title">Wyrmhort</h3>
-                        <div class="project-card-links">
+                        <img src="assets/images/wyrmhort.png" alt="Wyrmhort Logo" class="pc-logo">
+                        <h3 class="pc-title">Wyrmhort</h3>
+                        <div class="pc-links">
                             <a href="https://github.com/drachenpapa/wyrmhort" target="_blank" rel="noopener noreferrer" aria-label="Wyrmhort's GitHub Repository">
                                 <i data-lucide="github"></i>
                             </a>
@@ -126,14 +125,14 @@
                                 <i data-lucide="book"></i>
                             </a>
                         </div>
-                        <p class="project-card-tech">Python • FastAPI • React • Google Cloud</p>
-                        <p class="project-card-description">Personal hobby expense tracker with cloud infrastructure and modern tech stack.</p>
+                        <p class="pc-tech">Python • FastAPI • React • Google Cloud</p>
+                        <p class="pc-description">Personal hobby expense tracker with cloud infrastructure and modern tech stack.</p>
                     </div>
 
                     <div class="project-card">
-                        <img src="assets/images/drak.png" alt="Drak Logo" class="project-card-logo">
-                        <h3 class="project-card-title">Drak</h3>
-                        <div class="project-card-links">
+                        <img src="assets/images/drak.png" alt="Drak Logo" class="pc-logo">
+                        <h3 class="pc-title">Drak</h3>
+                        <div class="pc-links">
                             <a href="https://github.com/drachenpapa/drak" target="_blank" rel="noopener noreferrer" aria-label="Drak's GitHub Repository">
                                 <i data-lucide="github"></i>
                             </a>
@@ -141,14 +140,14 @@
                                 <i data-lucide="book"></i>
                             </a>
                         </div>
-                        <p class="project-card-tech">Java • Swing</p>
-                        <p class="project-card-description">Modernized remake of Zatacka ("Achtung, die Kurve!") with focus on code quality and design patterns.</p>
+                        <p class="pc-tech">Java • Swing</p>
+                        <p class="pc-description">Modernized remake of Zatacka ("Achtung, die Kurve!") with focus on code quality and design patterns.</p>
                     </div>
 
                     <div class="project-card">
-                        <img src="assets/images/pexi.png" alt="PEXI Logo" class="project-card-logo">
-                        <h3 class="project-card-title">PEXI</h3>
-                        <div class="project-card-links">
+                        <img src="assets/images/pexi.png" alt="PEXI Logo" class="pc-logo">
+                        <h3 class="pc-title">PEXI</h3>
+                        <div class="pc-links">
                             <a href="https://github.com/drachenpapa/pexi" target="_blank" rel="noopener noreferrer" aria-label="PEXI's GitHub Repository">
                                 <i data-lucide="github"></i>
                             </a>
@@ -156,8 +155,8 @@
                                 <i data-lucide="book"></i>
                             </a>
                         </div>
-                        <p class="project-card-tech">Java • Swing • H2 Database</p>
-                        <p class="project-card-description">Desktop income and expense tracker for comprehensive personal finance monitoring.</p>
+                        <p class="pc-tech">Java • Swing • H2 Database</p>
+                        <p class="pc-description">Desktop income and expense tracker for comprehensive personal finance monitoring.</p>
                     </div>
                 </div>
 
@@ -172,7 +171,7 @@
 
         <section id="resume" class="resume-section">
             <div class="section-container">
-                <h2 class="section-title resume-title">Resume</h2>
+                <h2 class="section-title">Resume</h2>
 
                 <div class="resume-categories">
                     <div class="resume-category">
@@ -181,20 +180,20 @@
                             <h3>Experience</h3>
                         </div>
                         <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">2019 - Present</div>
-                                <div class="timeline-content">
+                            <div class="tl-entry">
+                                <div class="tl-date">2019 - Present</div>
+                                <div class="tl-content">
                                     <h4>Senior Software Engineer</h4>
-                                    <p class="company">hmmh AG</p>
-                                    <p class="description">tbd.</p>
+                                    <p class="tl-subtitle">hmmh AG</p>
+                                    <p class="tl-description">tbd.</p>
                                 </div>
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2016 - 2019</div>
-                                <div class="timeline-content">
+                            <div class="tl-entry">
+                                <div class="tl-date">2016 - 2019</div>
+                                <div class="tl-content">
                                     <h4>Software Engineer</h4>
-                                    <p class="company">hmmh AG</p>
-                                    <p class="description">tbd.</p>
+                                    <p class="tl-subtitle">hmmh AG</p>
+                                    <p class="tl-description">tbd.</p>
                                 </div>
                             </div>
                         </div>
@@ -206,20 +205,20 @@
                             <h3>Education</h3>
                         </div>
                         <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">2013 - 2016</div>
-                                <div class="timeline-content">
+                            <div class="tl-entry">
+                                <div class="tl-date">2013 - 2016</div>
+                                <div class="tl-content">
                                     <h4>Master of Science (MS)</h4>
-                                    <p class="company">Computer Science</p>
-                                    <p class="description">Universität Bremen - tbd.</p>
+                                    <p class="tl-subtitle">Computer Science</p>
+                                    <p class="tl-description">Universität Bremen - tbd.</p>
                                 </div>
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2009 - 2013</div>
-                                <div class="timeline-content">
+                            <div class="tl-entry">
+                                <div class="tl-date">2009 - 2013</div>
+                                <div class="tl-content">
                                     <h4>Bachelor of Science (BS)</h4>
-                                    <p class="company">Computer Science</p>
-                                    <p class="description">Hochschule Bremen - tbd.</p>
+                                    <p class="tl-subtitle">Computer Science</p>
+                                    <p class="tl-description">Hochschule Bremen - tbd.</p>
                                 </div>
                             </div>
                         </div>
@@ -231,18 +230,18 @@
                             <h3>Certifications</h3>
                         </div>
                         <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">2018</div>
-                                <div class="timeline-content">
+                            <div class="tl-entry">
+                                <div class="tl-date">2018</div>
+                                <div class="tl-content">
                                     <h4>ISTQB CTFL-AT</h4>
-                                    <p class="company">Agile Tester Extension</p>
+                                    <p class="tl-subtitle">Agile Tester Extension</p>
                                 </div>
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2013</div>
-                                <div class="timeline-content">
+                            <div class="tl-entry">
+                                <div class="tl-date">2013</div>
+                                <div class="tl-content">
                                     <h4>ISTQB CTFL</h4>
-                                    <p class="company">Certified Tester Foundation Level</p>
+                                    <p class="tl-subtitle">Certified Tester Foundation Level</p>
                                 </div>
                             </div>
                         </div>

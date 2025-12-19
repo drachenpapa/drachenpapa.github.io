@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuToggle.addEventListener("click", () => {
         navMenu.classList.toggle("hidden");
-        navMenu.classList.toggle("flex");
     });
 
     initializeTheme();
