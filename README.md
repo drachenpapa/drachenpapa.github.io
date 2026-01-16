@@ -6,6 +6,7 @@ This site showcases a curated selection of my personal projects.
 ## 🧑‍💼 About Me
 
 I'm a software engineer with a focus on backend development, clean architecture, and software quality. I like working on systems that are understandable, well-tested, and maintainable over time.
+
 Software quality is an important part of my work. I'm an ISTQB certified tester (CTFL, CTFL-AT) and regularly deal with topics like testability, testing strategies, and quality-driven development in agile environments.
 
 Outside of work, I spend most of my time with my family, go jogging, and enjoy exploring new places in Pokémon GO. 🏃‍♂️🎮
