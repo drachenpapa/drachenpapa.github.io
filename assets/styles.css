@@ -97,12 +97,6 @@ header {
     font-size: 2rem;
 }
 
-.hero-section,
-.projects-section,
-.resume-section {
-    padding: 4rem 0;
-}
-
 .hero-section {
     min-height: 60vh;
     display: flex;
@@ -113,8 +107,7 @@ header {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 4rem 2rem;
 }
 
 .section-title {
@@ -147,10 +140,6 @@ header {
     flex-shrink: 0;
 }
 
-.hero-text {
-    flex: 1;
-}
-
 .hero-title {
     font-size: 3rem;
     line-height: 1;
@@ -164,15 +153,9 @@ header {
     margin-bottom: 1rem;
 }
 
-.hero-text-large,
-.hero-text-final {
+.hero-text {
     font-size: 1.125rem;
     line-height: 1.75rem;
-    margin-bottom: 1rem;
-}
-
-.hero-text-final {
-    margin-bottom: 1.5rem;
 }
 
 .highlight-link {
@@ -278,7 +261,6 @@ header {
     width: 80px;
     height: 80px;
     object-fit: contain;
-    margin-bottom: 1rem;
 }
 
 .pc-title {
@@ -301,7 +283,7 @@ header {
 .pc-tech {
     font-size: 0.9rem;
     color: var(--dragon-orange);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0;
     font-weight: 600;
 }
 
@@ -406,9 +388,13 @@ header {
     color: var(--text-dark);
 }
 
-.dark .nav-link,
-.dark .mobile-menu-toggle {
+.dark .nav-link {
     color: var(--text-dark);
+}
+
+.dark .mobile-menu-toggle i {
+    color: var(--text-dark);
+    stroke: var(--text-dark);
 }
 
 .dark .project-card,
