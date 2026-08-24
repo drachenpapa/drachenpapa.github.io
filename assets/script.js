@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeMobileMenu();
     initializeTheme();
 
-    if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
+    if (window.lucide) {
+        window.lucide.createIcons();
     }
 });
 
